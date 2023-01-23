@@ -1,5 +1,9 @@
 # esp32-multitask-blink-example
-FreeRTOS blink two LEDs example for the ESP32, FreeRTOS allows us to handle several tasks in parallel that run independently.
+FreeRTOS blink two LEDs example for the ESP32, FreeRTOS allows us to handle several tasks in parallel that run independently.<br />
+<br />
+Why is this useful? <br />
+In real life, instead of blinking LEDs, this can be tasks like making a network request, measuring sensors, controlling a motor, etc…<br />
+It will then be useful to assign specific parts of the code to a specific core in order to optimize performance.
 
 ***
 
@@ -64,4 +68,56 @@ FreeRTOS blink two LEDs example for the ESP32, FreeRTOS allows us to handle seve
     C:\>arduino-cli sketch new esp32-multitask-blink-example
         Sketch created in: C:\Users\Jorgen\Projects\esp32-multitask-blink-example
         
-  
+***
+### VSCode configuration:
+Change path where needed, these files are located under the `.vscode`-folder in this repository but I show the content here for clarity, you don't have to copy-paste if you clone or download them from this repository, just change to your board, your COM-port and your PATH.
+
+`settings.json`
+    
+    {
+        "arduino.enableUSBDetection": true,
+        "arduino.logLevel": "verbose",
+        "arduino.path": "C:/Bin",
+        "arduino.commandPath": "arduino-cli.exe",
+        "arduino.useArduinoCli": true,
+        "arduino.disableIntelliSenseAutoGen": true,
+        "arduino.defaultBaudRate": 115200
+    }
+    
+***    
+    
+`arduino.json`
+
+    {
+        "configuration": "FlashFreq=40,UploadSpeed=115200,DebugLevel=none",
+        "board": "esp32:esp32:esp32doit-devkit-v1",
+        "sketch": "esp32-multitask-blink-example.ino",
+        "port": "COM4",
+        "output": "build"
+    }
+
+***
+
+`c_cpp_properties.json`
+    
+    {
+        "configurations": [
+            {
+                "name": "ESP32",
+                "includePath": [
+                    "${workspaceFolder}/**",
+                    "C:/Users/Jorgen/AppData/Local/Arduino15/packages/esp32/hardware/esp32/1.0.6/**"
+                ],
+                "defines": [
+                    "_DEBUG",
+                    "UNICODE",
+                    "_UNICODE"
+                ],
+                "compilerPath": "C:/Users/Jorgen/AppData/Local/Arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-97-gc752ad5-5.2.0/bin/xtensa-esp32-elf-g++",
+                "cStandard": "c11",
+                "cppStandard": "gnu++11",
+                "intelliSenseMode": "gcc-x86"
+            }
+        ],
+        "version": 4
+    }
