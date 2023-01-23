@@ -18,6 +18,8 @@ It will then be useful to assign specific parts of the code to a specific core i
   https://arduino.github.io/arduino-cli/0.21/installation/#latest-release
 * Set the PATH to the folder where `arduino-cli` is located (`arduino-cli.exe` on Windows).
 * Install/Activate the Extension: Arduino for Visual Studio Code.
+* CP2102 USB to UART bridge chip drivers installed (or whatever chip your ESP32 module has for this)<br />
+  https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads
 
 ***
 
