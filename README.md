@@ -1,6 +1,10 @@
 # esp32-multitask-blink-example
 FreeRTOS blink two LEDs example for the ESP32, FreeRTOS allows us to handle several tasks in parallel that run independently.<br />
 <br />
+Example is taken from here:<br />
+https://randomnerdtutorials.com/esp32-dual-core-arduino-ide/
+<br />
+<br />
 Why is this useful? <br />
 In real life, instead of blinking LEDs, this can be tasks like making a network request, measuring sensors, controlling a motor, etc…<br />
 It will then be useful to assign specific parts of the code to a specific core in order to optimize performance.
@@ -10,8 +14,9 @@ It will then be useful to assign specific parts of the code to a specific core i
 ### Prerequisites
 
 * Download and install Visual Studio Code
-* Download and install `arduino-cli` (pre-built binary) https://arduino.github.io/arduino-cli/0.21/installation/#latest-release
-* Set the PATH to the folder where arduino-cli is (arduino-cli.exe on Windows).
+* Download and install `arduino-cli` (pre-built binary)<br /> 
+  https://arduino.github.io/arduino-cli/0.21/installation/#latest-release
+* Set the PATH to the folder where `arduino-cli` is located (`arduino-cli.exe` on Windows).
 * Install/Activate the Extension: Arduino for Visual Studio Code.
 
 ***
