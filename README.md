@@ -91,7 +91,7 @@ https://drive.google.com/file/d/1HbspRSdvF7cROVlgxRoYOVJftApYekXf/view?usp=shari
     
     Please note, this last step below is not needed if you clone this repository
     
-    C:\>arduino-cli sketch new esp32-multitask-blink-example
+    C:\Users\Jorgen\Projects>arduino-cli sketch new esp32-multitask-blink-example
         Sketch created in: C:\Users\Jorgen\Projects\esp32-multitask-blink-example
         
 ***
