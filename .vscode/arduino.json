@@ -1,0 +1,7 @@
+{
+    "configuration": "FlashFreq=40,UploadSpeed=115200,DebugLevel=none",
+    "board": "esp32:esp32:esp32doit-devkit-v1",
+    "sketch": "esp32-multitask-blink-example.ino",
+    "port": "COM4",
+    "output": "build"
+}
