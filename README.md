@@ -27,6 +27,10 @@ It will then be useful to assign specific parts of the code to a specific core i
 
 ***
 
+![VSCode_screenshot_pic3](https://user-images.githubusercontent.com/1673918/214077845-6be800e5-e5d7-4c59-bd0b-4736d077ea9f.jpg)
+
+***
+
 ### Installation (on Windows)
 
     C:\>arduino-cli config init
@@ -132,3 +136,17 @@ Change path where needed, these files are located under the `.vscode`-folder in 
         ],
         "version": 4
     }
+    
+***
+
+<br />
+
+If you got everything configured right you should be able to `CTRL`-click on `Arduino.h` and VSCode will take you there:
+
+<br />
+
+![VSCode_screenshot_pic2](https://user-images.githubusercontent.com/1673918/214077814-a9b102e9-f8b4-4e04-80e1-0f4865920751.jpg)
+
+***
+
+![VSCode_screenshot_pic1](https://user-images.githubusercontent.com/1673918/214077575-0687077c-f12d-47dc-9f40-a6748afeb2e9.jpg)
