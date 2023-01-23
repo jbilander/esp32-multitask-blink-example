@@ -17,7 +17,7 @@ It will then be useful to assign specific parts of the code to a specific core i
 
 ***
 
-Demo video here:
+Demo video here:<br />
 https://drive.google.com/file/d/1HbspRSdvF7cROVlgxRoYOVJftApYekXf/view?usp=sharing
 
 ***
