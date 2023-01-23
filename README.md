@@ -20,6 +20,10 @@ It will then be useful to assign specific parts of the code to a specific core i
 * Install/Activate the Extension: Arduino for Visual Studio Code.
 * CP2102 USB to UART bridge chip drivers installed (or whatever chip your ESP32 module has for this)<br />
   https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads
+  <br />
+  <br />
+  ![CP2102_USB_to_UART_Bridge](https://user-images.githubusercontent.com/1673918/214069209-56d945dc-1b37-4c78-b382-b7765a6d2505.jpg)
+
 
 ***
 
